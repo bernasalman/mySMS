@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mesaj_profil_resmi"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profil_resmi" />
+
+    <RelativeLayout
+        android:id="@+id/alici"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mesaj_profil_resmi">
+
+        <TextView
+            android:id="@+id/alici_mesaj_metni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/alici_mesajlari_layout"
+            android:padding="8dp"
+            android:text="alıcı mesajları burada "
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alici_sifreli_mesaj_metni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alici_mesaj_metni"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/alici_mesajlari_layout"
+            android:padding="8dp"
+            android:text="alıcı şifreli mesajları burada "
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+           />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alici">
+
+        <TextView
+            android:id="@+id/gonderen_mesaj_metni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gonderen_mesajlari_layout"
+            android:padding="8dp"
+            android:text="gönderen mesajları burada"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gonderen_sifreli_mesaj_metni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gonderen_mesaj_metni"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/gonderen_mesajlari_layout"
+            android:padding="8dp"
+            android:text="gönderen şifreli mesajları burada"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

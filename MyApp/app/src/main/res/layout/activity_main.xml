@@ -14,17 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        //sekme
-
         //sekmeler
-
-        <include
-            android:id="@+id/ana_sayfa_toolbar"
-            layout="@layout/app_bar_layout"
-            android:baselineAligned="false">
-
-        </include>
-
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/ana_sekmeler"
             android:layout_width="match_parent"

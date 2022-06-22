@@ -1,5 +1,7 @@
 package com.example.myapp;
 
+import android.icu.util.Freezable;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -30,6 +32,10 @@ public class SekmeErisimAdapter extends FragmentPagerAdapter {
                 KisilerFragment kisilerFragment = new KisilerFragment();
                 return  kisilerFragment;
 
+            case 3:
+                TaleplerFragment taleplerFragment = new TaleplerFragment();
+                return taleplerFragment;
+
             default:
                 return null;
         }
@@ -38,7 +44,7 @@ public class SekmeErisimAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
 
@@ -57,6 +63,9 @@ public class SekmeErisimAdapter extends FragmentPagerAdapter {
 
             case 2:
                 return  "kişiler";
+
+            case 3:
+                return  "talepler";
 
             default:
                 return null;

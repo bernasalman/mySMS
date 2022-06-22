@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextView hesapAlma, sifreUnutma;
 
     //firebase
-    private FirebaseUser mevcutKullanici;
+
     private FirebaseAuth mYetki;
 
     private ProgressDialog girisDialog;
@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         sifreUnutma = findViewById(R.id.sifre_unutma_baglantisi);
 
         mYetki = FirebaseAuth.getInstance();
-        mevcutKullanici = mYetki.getCurrentUser();
+
 
         girisDialog = new ProgressDialog(this);
 
@@ -65,6 +65,16 @@ public class LoginActivity extends AppCompatActivity {
                 KullaniciyaGirisİzniVer();
             }
         });
+
+        telefonGirisButonu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent telefonlaOturum = new Intent(LoginActivity.this,TelefonlaOturumActivity.class);
+                startActivity(telefonlaOturum);
+            }
+        });
+
     }
 
     private void KullaniciyaGirisİzniVer()
@@ -96,7 +106,9 @@ public class LoginActivity extends AppCompatActivity {
                             if (task.isSuccessful())
                             {
                                 Intent anaSayfa = new Intent(LoginActivity.this, MainActivity.class);
+                                anaSayfa.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(anaSayfa);
+                                finish();
 
                                 Toast.makeText(LoginActivity.this, "Giriş Başarılı",Toast.LENGTH_SHORT).show();
                                 girisDialog.dismiss();
@@ -114,13 +126,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onStart(){
-        super.onStart();
-        if (mevcutKullanici != null){
-            KullaniciAnaActivityeGonder();
-        }
-    }
+
 
     //kullanıcı giriş yapmak istediğinde açılacak ana sayfaya yönlendirme
     private void KullaniciAnaActivityeGonder() {

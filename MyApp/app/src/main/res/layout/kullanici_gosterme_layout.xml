@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/kullanicilar_profil_resmi"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profil_resmi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/kullanici_profil_adi"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Kullanıcı Adı"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/kullanici_cevrimici_olma_durumu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_cevrimici_black_24dp"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/kullanici_durumu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Kullanıcı Durumu"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/talep_kabul_buttonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="Kabul"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/talep_iptal_buttonu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="İptal"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TaleplerFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArkadasBulActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TelefonlaOturumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GrupChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AyarlarAktivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".KayitActivity"
             android:exported="false" />

@@ -4,20 +4,35 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/drawable/alici_mesajlari_dosyasi.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/drawable/buttonlar.xml" value="0.1" />
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/drawable/girdiler.xml" value="0.1" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/drawable/gonderen_mesajlari_layout.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.1111111111111111" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/drawable/ic_baseline_event_note_24.xml" value="0.1" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1" />
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/drawable/ic_baseline_phone_android_24.xml" value="0.1" />
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19537037037037036" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/drawable/profil_resmi.xml" value="0.1" />
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout-v31/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_kayit.xml" value="0.14339622641509434" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_arkadas_bul.xml" value="0.152" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_ayarlar_aktivity.xml" value="0.2" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_chat.xml" value="0.2" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_grup_chat.xml" value="0.20350877192982456" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_kayit.xml" value="0.1" />
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_profil.xml" value="0.152" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_talepler_fragment.xml" value="0.12310030395136778" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_telefonla_oturum.xml" value="0.1" />
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/app_bar_layout.xml" value="0.16799999999999998" />
-        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/fragment_chats.xml" value="0.2" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/fragment_chats.xml" value="0.176" />
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/fragment_gruplar.xml" value="0.1" />
         <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/fragment_kisiler.xml" value="0.152" />
-        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/menu/secenekler_menu.xml" value="0.25" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/kullanici_gosterme_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/ozel_mesajlar_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/layout/ozel_sohbet_bar.xml" value="0.2" />
+        <entry key="..\:/Users/Berna/AndroidStudioProjects/MyApp/app/src/main/res/menu/secenekler_menu.xml" value="0.264" />
       </map>
     </option>
   </component>

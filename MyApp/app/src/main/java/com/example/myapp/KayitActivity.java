@@ -18,6 +18,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.transition.platform.MaterialContainerTransform;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class KayitActivity extends AppCompatActivity {
 
@@ -25,9 +27,13 @@ public class KayitActivity extends AppCompatActivity {
     private EditText KullaniciMail, KullaniciSifre;
     private TextView ZatenHesapVar;
 
+    //firebase
+    private DatabaseReference kokReference;
     private FirebaseAuth mYetki;
 
+
     private ProgressDialog yukleniyorDialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +42,7 @@ public class KayitActivity extends AppCompatActivity {
 
         //firebase
         mYetki = FirebaseAuth.getInstance();
+        kokReference = FirebaseDatabase.getInstance().getReference();
 
         //kontroller
         KayitOlusturmaButtonu = findViewById(R.id.kayit_butonu);
@@ -93,8 +100,14 @@ public class KayitActivity extends AppCompatActivity {
 
                             if (task.isSuccessful())
                             {
-                                Intent girisSayfasi = new Intent(KayitActivity.this, LoginActivity.class);
-                                startActivity(girisSayfasi);
+                                String mevcutKullaniciId = mYetki.getCurrentUser().getUid();
+                                kokReference.child("Kullanicilar").child(mevcutKullaniciId).setValue("");
+
+                                Intent anaSayfa = new Intent(KayitActivity.this, MainActivity.class);
+                                //geriye basınca çıkış yapmamak için
+                                anaSayfa.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(anaSayfa);
+                                finish();
 
                                 Toast.makeText(KayitActivity.this, "Yeni hesap başarı ile oluşturuldu...",Toast.LENGTH_SHORT).show();
                                 yukleniyorDialog.dismiss();
